@@ -58,7 +58,6 @@ ul {
 
 .menu:hover {
     left: 0px;
-    transition: .3s;
 }
 
 .menu ul {
