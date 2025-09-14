@@ -127,6 +127,11 @@ ul {
     /*Tekstin keskittäminen*/
 }
 
+#variationsH1 {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 /*Shakkimuunnelman kuvien tyyli*/
 .variations img {
     width: 100%;
