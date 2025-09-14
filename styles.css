@@ -1,0 +1,173 @@
+/*Vartalon tyyli*/
+body {
+    font-family: Arial, sans-serif;
+    /*Fontti ja fonttiperhe*/
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.6;
+    /*Tekstirivin korkeus*/
+    background-color: #f9f9f9;
+    /*Taustan väri*/
+    color: #333;
+    /*Tekstin väri*/
+}
+
+/*Yläpalkin tyyli*/
+header {
+    background-image: url('medium_FIDE_World_FR_Chess_Championship_2019_-_Nepomniachtchi_v_So.jpg');
+    background-size: cover;
+    /*Taustakuvan koon säätäminen niin, että se peittää elementin*/
+    background-position: center;
+    /*Taustakuvan keskittäminen*/
+    width: 100%;
+    /*Täysi leveys*/
+    height: 200px;
+    /*Korkeus 200px*/
+}
+
+ul {
+    list-style-type: none;
+    /*Poistaa listan pisteet*/
+}
+
+/*menu-valikko*/
+.menu {
+    background-color: #a9a7a766;
+    /*Läpinäkyvä taustaväri*/
+    height: 100vh;
+    /*Korkeus 100% näkymäkorkeudesta*/
+    width: 100%;
+    max-width: 300px;
+    /*Maksimileveys*/
+    position: fixed;
+    top: 0px;
+    left: -250px;
+    display: flex;
+    flex-direction: column;
+    /*Elementtien asettaminen päällekkäin pystysuunnassa*/
+    justify-content: center;
+    /*Sisällön keskittäminen*/
+    align-items: stretch;
+    /*Venyttää jäsenet koko menun levyiseksi*/
+    text-align: center;
+    font-size: 3rem;
+    /*Fonttikoko valikon linkeille*/
+    transition: .3s ease;
+    /*Sulava siirtymä valikon liikkeelle*/
+}
+
+.menu:hover {
+    left: 0px;
+    transition: .3s;
+}
+
+.menu ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu li {
+    width: 100%;
+}
+
+.menu li:hover {
+    background-color: #3e4e8c;
+    /*Hover-efekti valikkokohdille*/
+}
+
+.menu a {
+    width: 100%;
+    color: #f9f9f9;
+    /*Linkkien väri*/
+    display: block;
+    text-decoration: none;
+    /*Poistaa alleviivauksen*/
+}
+
+/*Sivun tekstikappaleiden tyyli*/
+.text {
+    padding: 2rem;
+    /*text-luokan sisäinen tyhjä tila reunoilla*/
+    margin: 2rem;
+    /*text-luokan tyhjä tila ulkopuolella*/
+}
+
+/*Linkkiosion tyyli*/
+.resources {
+    text-align: center;
+    padding: 1rem;
+}
+
+/*Resources-luokan linkkien tyyli*/
+.resources a {
+    color: #3e4e8c;
+    /*Linkkien väri*/
+    text-decoration: none;
+    /*Alaviivan poistaminen*/
+}
+
+/*Linkkien tyyli leijuttaessa päällä hiirellä*/
+.resources a:hover {
+    text-decoration: underline;
+    /*Alaviiva leijuttaessa hiirellä*/
+}
+
+/*YouTube-videoiden kehyksien poistaminen ja marginaalit*/
+.youtube-videos iframe {
+    border: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/*Shakkimuunnelmaosion tyyli*/
+.variations {
+    padding: 1rem;
+    /*variations-luokan sisäinen tyhjä tila reunoilla*/
+    text-align: center;
+    /*Tekstin keskittäminen*/
+}
+
+/*Shakkimuunnelman kuvien tyyli*/
+.variations img {
+    width: 100%;
+    /*Täysi leveys mobiililaitteille*/
+    max-width: 200px;
+    /*Rajoitetaan maksimileveys*/
+    height: auto;
+    /*Kuvien korkeuden automaattinen säätäminen*/
+    border-radius: 2px;
+    /*Kuvien kulmien pyöristäminen*/
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
+    /*Varjostus kuville*/
+}
+
+/*Määrittely suuremmille ruuduille, kuin joiden leveys on 768px*/
+@media (min-width: 768px) {
+    .variations img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    header {
+        background-image: url('FIDE_World_FR_Chess_Championship_2019_-_Nepomniachtchi_v_So.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }
+}
+
+/*Määrittely suurille ruuduille*/
+@media (min-width: 1000px) {
+    header {
+        background-image: url('FIDE_World_FR_Chess_Championship_2019_-_Nepomniachtchi_v_So.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+    }
+}
+
+/*Pohjapalkin tyyli*/
+footer {
+    padding: 1rem;
+}
